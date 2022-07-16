@@ -1,4 +1,4 @@
-[10:41 AM, 7/16/2022] Kiet Satyam: class Stack {
+class Stack {
   private int arr[];
   private int top;
   private int capacity;
