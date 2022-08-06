@@ -1,0 +1,24 @@
+import java.util.Stack;
+ 
+public class BinaryTreePostOrder {
+ 
+    public static class TreeNode
+    {
+        int data;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int data)
+        {
+            this.data=data;
+        }
+    }
+ 
+    // Recursive Solution
+    public void postOrder(TreeNode root) {
+        if(root !=  null) {
+            postOrder(root.left);
+            postOrder(root.right);
+            //Visit the node by Printing the node data  
+            System.out.printf("%d ",root.data);
+        }
+    }
