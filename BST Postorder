@@ -13,12 +13,12 @@ public class BinaryTreePostOrder {
         }
     }
  
-    // Recursive Solution
+    
     public void postOrder(TreeNode root) {
         if(root !=  null) {
             postOrder(root.left);
             postOrder(root.right);
-            //Visit the node by Printing the node data  
+              
             System.out.printf("%d ",root.data);
         }
     }
